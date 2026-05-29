@@ -49,13 +49,28 @@
           "filmLabel": "",
           "date": "",
           "caption": ""
+        },
+        {
+          "type": "video-square",
+          "src": "media/video/GRAMPYHELPSW:TRIKE.mp4",
+          "filmLabel": "",
+          "date": "",
+          "caption": ""
         }
       ]
     },
     {
       "numeral": "III",
       "title": "Hilltop Hoosiers",
-      "blocks": []
+      "blocks": [
+        {
+          "type": "video-square",
+          "src": "",
+          "filmLabel": "",
+          "date": "",
+          "caption": ""
+        }
+      ]
     },
     {
       "numeral": "IV",
