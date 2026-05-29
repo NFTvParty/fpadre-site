@@ -1,12 +1,10 @@
 // Simple family-use password — change before deploying
 const PASSWORD = 'schroer2026';
 
-// GitHub API config — fill these in before deploying
-const GITHUB_TOKEN = const GITHUB_TOKEN = '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';
+// GitHub API config — token entered at login, never stored in repo
 const GITHUB_OWNER = 'NFTvParty';
 const GITHUB_REPO = 'fpadre-site';
-const GITHUB_OWNER = '';
-const GITHUB_REPO = '';
+const getToken = () => sessionStorage.getItem('github_token') || '';
 
 let contentData = null;
 let fileSha = null;
@@ -24,8 +22,10 @@ function checkAuth() {
 
 document.getElementById('login-btn').addEventListener('click', () => {
   const val = document.getElementById('password-input').value;
+  const tok = document.getElementById('token-input').value.trim();
   if (val === PASSWORD) {
     sessionStorage.setItem('admin_authed', 'yes');
+    if (tok) sessionStorage.setItem('github_token', tok);
     showEditor();
   } else {
     document.getElementById('login-error').textContent = 'Incorrect password.';
@@ -309,7 +309,7 @@ async function saveContent() {
   btn.disabled = true;
 
   try {
-    if (GITHUB_TOKEN && GITHUB_OWNER && GITHUB_REPO) {
+    if (getToken() && GITHUB_OWNER && GITHUB_REPO) {
       await saveToGitHub();
     } else {
       downloadJSON();
@@ -330,7 +330,7 @@ async function saveToGitHub() {
   // get current sha if we don't have it
   if (!fileSha) {
     const metaRes = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/content.json`, {
-      headers: { Authorization: `token ${GITHUB_TOKEN}` }
+      headers: { Authorization: `token ${getToken()}` }
     });
     const meta = await metaRes.json();
     fileSha = meta.sha;
@@ -339,7 +339,7 @@ async function saveToGitHub() {
   const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/content.json`, {
     method: 'PUT',
     headers: {
-      Authorization: `token ${GITHUB_TOKEN}`,
+      Authorization: `token ${getToken()}`,
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
