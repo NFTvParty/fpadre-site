@@ -22,6 +22,20 @@
           "filmLabel": "Grandpa Lee and his Rolli",
           "date": "Early 1980s Richardson, TX",
           "caption": "the tail end of the Super 8 era, but i'm so grateful my dad turned the cam on Grandpa Lee in that specific pose. The conenentration. The gravitas of any moment was elevlatee when he cra nked that camera. I can still stmell the leather light-metter pouch too."
+        },
+        {
+          "type": "video-square",
+          "src": "media/video/GOOFYGRAMPY.mp4",
+          "filmLabel": "",
+          "date": "",
+          "caption": ""
+        },
+        {
+          "type": "video-square",
+          "src": "media/video/GRAMPYHELPSW:TRIKE.mp4",
+          "filmLabel": "",
+          "date": "",
+          "caption": ""
         }
       ]
     },
