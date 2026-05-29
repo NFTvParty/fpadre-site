@@ -1,0 +1,52 @@
+{
+  "site": {
+    "title": "My Father,",
+    "name": "James A. Schroer",
+    "dates": "1945 — 2026",
+    "intro": "Fragments from home movies, photographs, and the things I remember him saying.",
+    "footer": "For the family · Made with love"
+  },
+  "chapters": [
+    {
+      "numeral": "I",
+      "title": "Archival Prologue",
+      "blocks": [
+        {
+          "type": "text",
+          "quote": "He had a way of entering a room like he'd already been there, like the room had been waiting.",
+          "attribution": "— remembered, summer 1988"
+        }
+      ]
+    },
+    {
+      "numeral": "II",
+      "title": "Jimmy",
+      "blocks": []
+    },
+    {
+      "numeral": "III",
+      "title": "Hilltop Hoosiers",
+      "blocks": []
+    },
+    {
+      "numeral": "IV",
+      "title": "Jane",
+      "blocks": []
+    },
+    {
+      "numeral": "V",
+      "title": "Jeff",
+      "blocks": []
+    },
+    {
+      "numeral": "VI",
+      "title": "Jason",
+      "blocks": []
+    },
+    {
+      "numeral": "VII",
+      "title": "Generations",
+      "blocks": []
+    }
+  ]
+}
