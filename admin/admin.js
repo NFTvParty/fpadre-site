@@ -2,7 +2,9 @@
 const PASSWORD = 'schroer2026';
 
 // GitHub API config — fill these in before deploying
-const GITHUB_TOKEN = '';
+const GITHUB_TOKEN = const GITHUB_TOKEN = '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';
+const GITHUB_OWNER = 'NFTvParty';
+const GITHUB_REPO = 'fpadre-site';
 const GITHUB_OWNER = '';
 const GITHUB_REPO = '';
 
