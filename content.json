@@ -29,13 +29,28 @@
           "filmLabel": "",
           "date": "",
           "caption": ""
+        },
+        {
+          "type": "video-square",
+          "src": "media/video/GOOFYGRAMPY.mp4",
+          "filmLabel": "",
+          "date": "",
+          "caption": ""
         }
       ]
     },
     {
       "numeral": "II",
       "title": "Jimmy",
-      "blocks": []
+      "blocks": [
+        {
+          "type": "video-vertical",
+          "src": "media/video/May-23-2026-17-1779530697_0697920.MOV",
+          "filmLabel": "",
+          "date": "",
+          "caption": ""
+        }
+      ]
     },
     {
       "numeral": "III",
